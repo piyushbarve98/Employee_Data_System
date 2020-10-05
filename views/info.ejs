@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee</title>
+    <link href="assets/style.css" rel="stylesheet">
+    <style>
+        
+        form{
+            align-items: flex-start;
+        }
+        h1{
+            align-self: center;
+            margin-bottom: 1rem;
+            background-color: rgba(18, 111, 233, 0.808);
+            padding:0.3rem 2rem;
+            border-radius: 20px;
+            color: white;
+        }
+        .tag{
+            font-size: 1.2em;
+            padding:0.3rem 0.6rem;
+            background-color: rgba(49, 95, 223, 0.822);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 1.2rem;
+        }
+        .homebtn{
+            align-self: center;
+            padding: 0.6rem 1.4rem;
+            color: white;
+            background-color: rgba(12, 57, 141, 0.856);
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .homebtn:hover{
+            color: rgba(12, 57, 141, 0.856);
+            background-color: white;
+            border: 2px solid rgba(12, 57, 141, 0.856);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Profile</h1>
+        <span class='tag'>ID:  <%= info.id %></span>
+        <span class='tag'>Name:  <%= info.name %></span>
+         <span class='tag'>E-mail: <%= info.email %></span> 
+        <span class='tag'>Age: <%= info.age %> years</span>
+        <span class='tag'>Salary: <%= info.salary %> Rs</span><br>
+        <a href='home' class='homebtn'>HomePage</a>
+    </form>
+</body>
+</html>
